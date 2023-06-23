@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Reservations } from "../data/Reservations";
 export default function tableReservation() {
   return (
     <div>
@@ -51,48 +51,30 @@ export default function tableReservation() {
                     <table className="table table-hover text-nowrap job-seeker-tbl">
                       <thead>
                         <tr>
-                          <th>Reservation ID</th>
                           <th>Customer ID</th>
                           <th>Restaurant ID</th>
+                          <th>Guest Size</th>
+
                           <th>Time</th>
                           <th>Note</th>
-                          <th>Guest Size</th>
                           <th>Edit</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>1</td>
-                          <td>1</td>
-                          <td>yyyy/mm/dd</td>
-                          <td>3 persons, 2 kids,...</td>
-                          <td>Guest</td>
-                          <td>
-                            <button className="active-btn">
-                              <i className="fas fa-pencil-alt"></i>
-                            </button>
-                            <button className="active-btn">
-                              <i className="far fa-file-alt"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>2</td>
-                          <td>2</td>
-                          <td>yyyy/mm/dd</td>
-                          <td>3 persons, 2 kids,...</td>
-                          <td>Guest</td>
-                          <td>
-                            <button className="active-btn">
-                              <i className="fas fa-pencil-alt"></i>
-                            </button>
-                            <button className="active-btn">
-                              <i className="far fa-file-alt"></i>
-                            </button>
-                          </td>
-                        </tr>
+                        {Reservations.map((res) => (
+                          <tr>
+                            <td>{res.customerID}</td>
+                            <td>{res.restaurantID}</td>
+                            <td>{res.guestSize}</td>
+                            <td>{res.time}</td>
+                            <td>{res.note}</td>
+                            <td>
+                              <button className="active-btn">
+                                <i className="fas fa-pencil-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
                       </tbody>
                     </table>
                   </div>

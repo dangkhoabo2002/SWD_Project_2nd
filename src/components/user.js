@@ -10,7 +10,7 @@ export default function user() {
         <div className="container-fluid">
           <div className="row mb-4">
             <div className="col-md-12 title-block">
-              <h1 className="main-title">Manage User</h1>
+              <h1 className="main-title">Manage Staff</h1>
             </div>
           </div>
         </div>
@@ -71,16 +71,13 @@ export default function user() {
                             <button className="active-btn">
                               <i className="fas fa-pencil-alt"></i>
                             </button>
-                            <button className="active-btn">
-                              <i className="far fa-file-alt"></i>
-                            </button>
                           </td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
-                <div className="card-footer">
+                {/* <div className="card-footer">
                   <div className="pagination-block">
                     <ul className="pagination">
                       <li className="page-item">
@@ -130,7 +127,7 @@ export default function user() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

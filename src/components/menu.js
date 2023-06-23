@@ -53,6 +53,9 @@ export default function menu() {
                       <tr>
                         <th>Image</th>
                         <th>Name</th>
+                        <th>Detail</th>
+                        <th>Type</th>
+                        <th>Restaurant ID</th>
                         <th>Price</th>
                         <th>Status</th>
                         <th>Edit</th>
@@ -67,14 +70,14 @@ export default function menu() {
                             </a>
                           </td>
                           <td>{menu.name}</td>
+                          <td>{menu.detail}</td>
+                          <td>{menu.type}</td>
+                          <td>{menu.restaurantID}</td>
                           <td>{menu.price}</td>
                           <td>{menu.status}</td>
                           <td>
                             <button className="active-btn">
                               <i className="fas fa-pencil-alt"></i>
-                            </button>
-                            <button className="active-btn">
-                              <i className="far fa-file-alt"></i>
                             </button>
                           </td>
                         </tr>
