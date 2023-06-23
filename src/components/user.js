@@ -54,7 +54,8 @@ export default function user() {
                         <th>Username</th>
                         <th>Password</th>
                         <th>Phone</th>
-                        <th>Status</th>
+                        <th>Email</th>
+                        <th>Role</th>
 
                         <th>Edit</th>
                       </tr>
@@ -66,7 +67,8 @@ export default function user() {
                           <td>{user.username}</td>
                           <td>{user.password}</td>
                           <td>{user.phone}</td>
-                          <td>{user.status}</td>
+                          <td>{user.email}</td>
+                          <td>{user.isAdmin}</td>
                           <td>
                             <button className="active-btn">
                               <i className="fas fa-pencil-alt"></i>

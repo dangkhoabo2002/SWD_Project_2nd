@@ -4,6 +4,8 @@ export const Users = [
     password: "abcd",
     username: "Jett",
     phone: "019283019823",
+    email: "abc@gmail.com",
+    isAdmin: 1,
     status: "Active",
   },
   {
@@ -11,6 +13,8 @@ export const Users = [
     password: "abcd",
     username: "Jett",
     phone: "019283019823",
+    email: "abc@gmail.com",
+    isAdmin: 1,
     status: "Active",
   },
   {
@@ -18,6 +22,8 @@ export const Users = [
     password: "abcd",
     username: "Jett",
     phone: "019283019823",
+    email: "abc@gmail.com",
+    isAdmin: 1,
     status: "Active",
   },
   {
@@ -25,6 +31,8 @@ export const Users = [
     password: "abcd",
     username: "Jett",
     phone: "019283019823",
+    email: "abc@gmail.com",
+    isAdmin: 1,
     status: "Active",
   },
 ];
